@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
+  <!--FONTAWESOME PARA LOS ICONOS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira+Stencil+One&family=Zen+Dots&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="header">
+
+    <!--BARRA DE NAVEGACION  (MENÚ)-->
+    <nav class="navbar">
+
+      <h1 class="logo">Mi Portafolio <i class="fa-solid fa-code"></i></h1>
+      <!--ICONO DE HAMBURGUESA PARA MÓVILES-->
+      <a class="labe_hamburguesa" href="#menu-abierto">
+        <h1 class="list_icon"><i class="fa-solid fa-bars"></i></h1>
+      </a>
+      <!--TARGET PARA LE MENÚ DE HAMBURGUESA-->
+      <div id="menu-abierto" class="menu-abierto-target">
+        <!--ENLACES PARA CADA UNA DE LAS SECCIONES-->
+        <ul class="ul_links">
+          <li class="li_links"><a class="link" href="index.html">Inicio</a></li>
+          <li class="li_links"><a class="link" href="#sobre"> Sobre Mí</a></li>
+          <li class="li_links"><a class="link" href="#habili">Habilidades</a></li>
+          <li class="li_links"><a class="link" href="#proyec">Proyectos</a></li>
+          <li class="li_links"><a class="link" href="#contac"> Contacto</a></li>
+        </ul>
+
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <!--SECCIÓN DE PRESENTACION -->
+    <section id="pres" class="Presentacion">
+      <h2>Desarrollador Web Frontend</h2>
+      <h4>Creando experiencias digitales modernas con HTML5, CSS3 y JavaScript.</h4>
+      <h4>Especializado en desarrollo web responsive y aplicaciones interactivas</h4>
+      <a href="#proyec"><button class="btn_ver_proyectos"> Ver Proyectos </button></a>
+      <!-- BOTON PARA DESCARGAR CV -->
+      <a href="doc/cv.pdf"><button class="btn_descargarcv"> Descargar CV </button></a>
+    </section>
+
+    <!-- SECCIÓN SOBRE MI -->
+    <section id="sobre">
+      <div class="sobre_mi">
+        <h2>Sobre Mí</h2>
+
+        <div class="contenido">
+          <div class="texto">
+            <h4>Hola, soy Royner</h4>
+            <p>Soy un desarrollador frontend apasionado por crear experiencias web excepcionales. Con más de 3 años de
+              experiencia, me especializo en convertir ideas complejas en interfaces intuitivas y atractivas. </p>
+
+            <p>Mi enfoque se centra en escribir código limpio, eficiente y mantenible, siempre buscando las mejores
+              prácticas y las últimas tecnologías del sector. </p>
+
+            <p>Cuando no estoy codificando, me gusta aprender nuevas tecnologías, contribuir a proyectos de código
+              abierto y mantenerme actualizado con las tendencias del desarrollo web.</p>
+
+            <a href="#contac" class="btn">Contáctame</a>
+          </div>
+
+          <div class="foto">
+            <img src="img/foto.jpeg" alt="Foto de Royner">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--SECCIÓN MIS HABILIDADES -->
+    <section id="habili">
+      <div class="habilidades">
+        <h2>Mis Habilidades</h2>
+        <!--  TARGETAS DE HABILIDADES -->
+        <div class="card">
+          <i class="fa-brands fa-html5"></i>
+          <h4>HTML5</h4>
+          <p>Marcado semántico y accesible, estructurado para optimización SEO y mejor experiencia de usuario.</p>
+        </div>
+
+        <div class="card">
+          <i class="fa-brands fa-css3-alt"></i>
+          <h4>CSS3</h4>
+          <p>Estilos modernos con Flexbox, Grid, animaciones y diseño responsive para todos los dispositivos.</p>
+        </div>
+
+        <div class="card">
+          <i class="fa-brands fa-js"></i>
+          <h4>JavaScript</h4>
+          <p>Interactividad, manipulación del DOM, APIs y frameworks modernos para aplicaciones dinámicas.</p>
+        </div>
+
+        <div class="card">
+          <i class="fa-brands fa-angular"></i>
+          <h4>Angular</h4>
+          <p>Desarrollo de aplicaciones modulares, robustas y escalables con arquitectura de componentes reutilizables.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN MIS PROYECTOS-->
+    <section id="proyec">
+      <div class="proyectos">
+        <h2>Mis Proyectos</h2>
+
+        <div class="proyectos_grid">
+          <!--  TARJETAS DE PROYECTOS-->
+          <div class="proyectos_card">
+            <img src="img/e-commerce.jpg" alt="E-commerce Moderno">
+            <h4>E-commerce Moderno</h4>
+            <p>Tienda online desarrollada con React, con carrito de compras, pasarela de pago y panel de administración.
+            </p>
+            <a href="#"><button>VER DETALLES</button></a>
+          </div>
+
+          <div class="proyectos_card">
+            <img src="img/app.png" alt="App de Tareas">
+            <h4>App de Tareas</h4>
+            <p>Aplicación para gestión de tareas con funciones de arrastrar y soltar, categorías y recordatorios.</p>
+            <a href="#"><button>VER DETALLES</button></a>
+          </div>
+
+          <div class="proyectos_card">
+            <img src="img/dashboard.jpg" alt="Dashboard Analytics">
+            <h4>Dashboard Analytics</h4>
+            <p>Panel de control con gráficos interactivos para visualización de datos empresariales en tiempo real.</p>
+            <a href="#"><button>VER DETALLES</button></a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--SECCIÓN CONTACTO-->
+
+    <section id="contac">
+      <div class="contacto">
+        <h2>Contacto</h2>
+
+        <div class="contacto-contenido">
+          <div class="info-contacto">
+            <!--SECCIÓN DE CONTACTO CON ICONOS-->
+            <p><strong>Email</strong></p>
+            <p><i class="fa-solid fa-envelope"></i> moralescorralesroyner@gmail.com</p>
+
+            <p><strong>Teléfono</strong></p>
+            <p><i class="fa-solid fa-phone"></i> +506 8735-0140</p>
+
+            <p><strong>Ubicación</strong></p>
+            <p><i class="fa-solid fa-location-dot"></i> Zona de los Santos, Costa Rica</p>
+          </div>
+          <!--  FORMULARIO DE CONTACTO-->
+
+          <div class="formulario">
+            <form action="validacion.php" method="post">
+              <label>Nombre</label>
+              <input type="text" name="nom" placeholder="Tu nombre" required />
+              <!--EL TYPE ´EMAIL´ ES EL QUE NO PERMITE IGRESAR EMAIL SI NO HAY NADA DESDPUES DE @-->
+              <label>Email</label>
+              <input type="email" name="email" placeholder="Tu email" required />
+
+              <label>Mensaje</label>
+              <textarea name="msj" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+              <div class="enviar">
+                <button type="submit">Enviar Mensaje</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!--FOOTER CON ENLACES-->
+
+  <footer class="footer">
+
+    <div class="icons">
+      <div class="i_content"><a href="https://www.linkedin.com/in/royner-morales-corrales-899483216/"><i
+            class="fa-brands fa-linkedin"></i></a></div>
+      <div class="i_content"><a href="https://github.com/Roynermc"><i class="fa-brands fa-github"></i></a></div>
+      <div class="i_content"><a href="https://www.instagram.com/roynermc/"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <div class="i_content"><a href="https://www.facebook.com/royner.morales.52/"><i
+            class="fa-brands fa-square-facebook"></i></a></div>
+    </div>
+    <p>© Mi Portafolio. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+
+</html>
